@@ -68,6 +68,19 @@ PyInstaller executables are sometimes flagged by antivirus software (false posit
 you can build it yourself with `build.bat`. Consider adding a [VirusTotal](https://www.virustotal.com)
 scan link of each release here.
 
+## Windows warnings and antivirus
+Phantom is not code-signed, so Windows SmartScreen may say "Windows protected your PC".
+Click **More info → Run anyway**. The warning fades as more people download the file.
+
+Executables built with PyInstaller are sometimes flagged by a few antivirus engines
+(generic names like "Suspicious PE" or "Trojan.Script"). These are false positives.
+You don't have to trust the binary:
+- compare its SHA-256 with `SHA256SUMS.txt` from the release, or
+- build it yourself from the source with `build.bat`.
+
+Phantom talks only to: api.github.com (update check), store.steampowered.com and
+Steam's CDN (game names and banners), and your local Steam client. It sends no data anywhere.
+
 ## Adding a language
 Open `translations.py`, copy the `EN` block, translate the text after ` = `, add the code to `LANGUAGES`
 and to `STRINGS`. Keep placeholders such as `{name}` unchanged.
