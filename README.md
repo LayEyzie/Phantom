@@ -5,7 +5,7 @@ Created by **LayEyzie**.
 Tiny windows with game banners that report an "In-Game" status to Steam.
 Works only for games you own on your account (checked with `BIsSubscribedApp`).
 
-<!-- Add a screenshot here: ![Phantom](docs/screenshot.png) -->
+   <img src="docs/screenshot.png" width="420" alt="Phantom">
 
 ## Usage
 1. Download `Phantom.exe` from the Releases tab and run it anywhere - a single file, no installer.
