@@ -1,0 +1,5 @@
+build/
+dist/
+__pycache__/
+*.spec
+steam_api64.dll
